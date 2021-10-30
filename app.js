@@ -64,6 +64,11 @@ const galleryItems = [
   },
 ];
 
+const lightboxContainer = document.querySelector(".js-gallery");
+const cardsMarkup = createPictureCardsMarkup(galleryItems);
+
+lightboxContainer.insertAdjacentHTML("beforeend", cardsMarkup);
+
 console.log(createPictureCardsMarkup(galleryItems));
 
 function createPictureCardsMarkup(galleryItems) {
